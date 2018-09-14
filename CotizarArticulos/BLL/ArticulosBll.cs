@@ -1,19 +1,17 @@
 ﻿using CotizarArticulos.Entidades;
 using System;
 using System.Collections.Generic;
-using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CotizarArticulos.DAL
+namespace CotizarArticulos.BLL
 {
-    class Contexto : DbContext
+    class ArticulosBll
     {
-        public DbSet<Articulos> Articulo { get; set; }
-
-        public Contexto() : base("ConStr")
+        public static bool Guardar(Articulos articulos)
         {
+            bool paso = false;
 
         }
     }
