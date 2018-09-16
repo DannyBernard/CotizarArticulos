@@ -23,7 +23,7 @@ namespace CotizarArticulos.UI.Registros
         {
             IDnumericUpDown.Value = 0;
             DescripciontextBox.Text = string.Empty;
-            IDnumericUpDown.Value = 0;
+            PrecionumericUpDown.Value = 0;
             ExitencianumericUpDown.Value = 0;
             CantidadnumericUpDown.Value = 0;
             FechaVencidodateTimePicker.Value = DateTime.Now;  

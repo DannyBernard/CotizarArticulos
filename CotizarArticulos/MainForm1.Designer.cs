@@ -72,6 +72,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::CotizarArticulos.Properties.Resources.inventario_enriqueherrera;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(734, 435);
             this.Controls.Add(this.menuStrip1);
             this.IsMdiContainer = true;

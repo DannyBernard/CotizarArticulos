@@ -33,5 +33,7 @@ namespace CotizarArticulos
             rConsulta.Show();
             rConsulta.MdiParent = this;
         }
+
+       
     }
 }
