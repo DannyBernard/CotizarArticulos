@@ -86,6 +86,7 @@ namespace CotizarArticulos.UI.Registros
 
         private void Guardarbutton_Click(object sender, EventArgs e)
         {
+            errorProvider1.Clear();
             bool paso = false;
             Articulos articulos;
             Contexto contexto = new Contexto();
@@ -150,6 +151,7 @@ namespace CotizarArticulos.UI.Registros
         
         private void Buscarbutton_Click(object sender, EventArgs e)
         {
+            errorProvider1.Clear();
             int id;
             Articulos articulos = new Articulos();
             int.TryParse(IDnumericUpDown.Text,out id);
