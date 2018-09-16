@@ -6,9 +6,9 @@ GO
 CREATE TABLE Articulos
 (
  ID int primary key identity,
- Descricion varchar (20),
- FechaDeVencimiento varchar(20),
- precio float,
+ Descripcion varchar (20),
+ FechaDeVencimiento datetime,
+ precio decimal,
  Exitencia int,
  Cantidad int
  )

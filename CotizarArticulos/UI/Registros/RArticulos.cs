@@ -23,8 +23,8 @@ namespace CotizarArticulos.UI.Registros
         {
             IDnumericUpDown.Value = 0;
             DescripciontextBox.Text = string.Empty;
-            textBoxPrecio.Text = string.Empty;
-            ExitenciatextBox.Text = string.Empty;
+            IDnumericUpDown.Value = 0;
+            ExitencianumericUpDown.Value = 0;
             CantidadnumericUpDown.Value = 0;
             FechaVencidodateTimePicker.Value = DateTime.Now;  
         }
@@ -46,14 +46,14 @@ namespace CotizarArticulos.UI.Registros
                 errorProvider1.SetError(CantidadnumericUpDown, "Campo esta vacio");
                 paso = false;
             }
-            if (string.IsNullOrWhiteSpace(ExitenciatextBox.Text))
+            if (ExitencianumericUpDown.Value <= 0)
             {
-                errorProvider1.SetError(ExitenciatextBox, "Campo esta vacio");
+                errorProvider1.SetError(ExitencianumericUpDown, "Campo esta vacio");
                 paso = false;
             }
-            if (string.IsNullOrWhiteSpace(textBoxPrecio.Text))
+            if (PrecionumericUpDown.Value <=0)
             {
-                errorProvider1.SetError(textBoxPrecio, "Campo esta vacio");
+                errorProvider1.SetError(PrecionumericUpDown, "Campo esta vacio");
                 paso = false;
             }
             if (string.IsNullOrWhiteSpace(DescripciontextBox.Text))
@@ -67,9 +67,9 @@ namespace CotizarArticulos.UI.Registros
         {
             Articulos articulos = new Articulos();
             articulos.ID = Convert.ToInt32(IDnumericUpDown.Value);
-            articulos.Descricion = DescripciontextBox.Text;
-            articulos.Precio = Convert.ToSingle(textBoxPrecio.Text);
-            articulos.Exitencia = Convert.ToInt32(ExitenciatextBox.Text);
+            articulos.Descripcion = DescripciontextBox.Text;
+            articulos.Precio = PrecionumericUpDown.Value;
+            articulos.Exitencia = Convert.ToInt32(ExitencianumericUpDown.Value);
             articulos.Cantidad = Convert.ToInt32(CantidadnumericUpDown.Value);
             articulos.FechaDeVencimiento = FechaVencidodateTimePicker.Value;
             return articulos;
@@ -106,7 +106,10 @@ namespace CotizarArticulos.UI.Registros
                     paso = ArticulosBll.Modificar(articulos);
                 }
                 if (paso)
+                {
                     MessageBox.Show("Guardado con exito", "Guardo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    Limpiar();
+                }
                 else
                     MessageBox.Show(" no Guardado ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
@@ -131,14 +134,14 @@ namespace CotizarArticulos.UI.Registros
             errorProvider1.SetError(IDnumericUpDown,"no se puede eliminar");
 
         }
-        private void LlenarCampo()
+        private void LlenarCampo(Articulos articulos)
         {
-            Articulos articulos = new Articulos();
-
+          
+            
             IDnumericUpDown.Value = articulos.ID;
-            DescripciontextBox.Text = articulos.Descricion;
-            articulos.Precio = Convert.ToSingle(textBoxPrecio);
-            articulos.Exitencia = Convert.ToInt32(ExitenciatextBox);
+            DescripciontextBox.Text = articulos.Descripcion;
+            PrecionumericUpDown.Value = articulos.Precio;
+            ExitencianumericUpDown.Value = articulos.Exitencia;
             CantidadnumericUpDown.Value = articulos.Cantidad;
             FechaVencidodateTimePicker.Value = articulos.FechaDeVencimiento;
 
@@ -156,7 +159,7 @@ namespace CotizarArticulos.UI.Registros
             if(articulos != null)
             {
                 MessageBox.Show("Encotrado");
-                LlenarCampo();
+                LlenarCampo(articulos);
 
             }
             else

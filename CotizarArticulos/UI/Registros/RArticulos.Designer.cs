@@ -37,8 +37,6 @@
             this.label6 = new System.Windows.Forms.Label();
             this.IDnumericUpDown = new System.Windows.Forms.NumericUpDown();
             this.DescripciontextBox = new System.Windows.Forms.TextBox();
-            this.textBoxPrecio = new System.Windows.Forms.TextBox();
-            this.ExitenciatextBox = new System.Windows.Forms.TextBox();
             this.CantidadnumericUpDown = new System.Windows.Forms.NumericUpDown();
             this.FechaVencidodateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.Nuevobutton = new System.Windows.Forms.Button();
@@ -46,9 +44,13 @@
             this.Eliminarbutton = new System.Windows.Forms.Button();
             this.Buscarbutton = new System.Windows.Forms.Button();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.PrecionumericUpDown = new System.Windows.Forms.NumericUpDown();
+            this.ExitencianumericUpDown = new System.Windows.Forms.NumericUpDown();
             ((System.ComponentModel.ISupportInitialize)(this.IDnumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CantidadnumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PrecionumericUpDown)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ExitencianumericUpDown)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -119,25 +121,11 @@
             this.DescripciontextBox.Size = new System.Drawing.Size(229, 20);
             this.DescripciontextBox.TabIndex = 8;
             // 
-            // textBoxPrecio
-            // 
-            this.textBoxPrecio.Location = new System.Drawing.Point(145, 106);
-            this.textBoxPrecio.Name = "textBoxPrecio";
-            this.textBoxPrecio.Size = new System.Drawing.Size(229, 20);
-            this.textBoxPrecio.TabIndex = 9;
-            // 
-            // ExitenciatextBox
-            // 
-            this.ExitenciatextBox.Location = new System.Drawing.Point(145, 145);
-            this.ExitenciatextBox.Name = "ExitenciatextBox";
-            this.ExitenciatextBox.Size = new System.Drawing.Size(229, 20);
-            this.ExitenciatextBox.TabIndex = 10;
-            // 
             // CantidadnumericUpDown
             // 
             this.CantidadnumericUpDown.Location = new System.Drawing.Point(145, 186);
             this.CantidadnumericUpDown.Name = "CantidadnumericUpDown";
-            this.CantidadnumericUpDown.Size = new System.Drawing.Size(77, 20);
+            this.CantidadnumericUpDown.Size = new System.Drawing.Size(229, 20);
             this.CantidadnumericUpDown.TabIndex = 11;
             // 
             // FechaVencidodateTimePicker
@@ -192,19 +180,33 @@
             // 
             this.errorProvider1.ContainerControl = this;
             // 
+            // PrecionumericUpDown
+            // 
+            this.PrecionumericUpDown.Location = new System.Drawing.Point(145, 109);
+            this.PrecionumericUpDown.Name = "PrecionumericUpDown";
+            this.PrecionumericUpDown.Size = new System.Drawing.Size(229, 20);
+            this.PrecionumericUpDown.TabIndex = 17;
+            // 
+            // ExitencianumericUpDown
+            // 
+            this.ExitencianumericUpDown.Location = new System.Drawing.Point(145, 148);
+            this.ExitencianumericUpDown.Name = "ExitencianumericUpDown";
+            this.ExitencianumericUpDown.Size = new System.Drawing.Size(229, 20);
+            this.ExitencianumericUpDown.TabIndex = 18;
+            // 
             // RArticulos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(393, 343);
+            this.Controls.Add(this.ExitencianumericUpDown);
+            this.Controls.Add(this.PrecionumericUpDown);
             this.Controls.Add(this.Buscarbutton);
             this.Controls.Add(this.Eliminarbutton);
             this.Controls.Add(this.Guardarbutton);
             this.Controls.Add(this.Nuevobutton);
             this.Controls.Add(this.FechaVencidodateTimePicker);
             this.Controls.Add(this.CantidadnumericUpDown);
-            this.Controls.Add(this.ExitenciatextBox);
-            this.Controls.Add(this.textBoxPrecio);
             this.Controls.Add(this.DescripciontextBox);
             this.Controls.Add(this.IDnumericUpDown);
             this.Controls.Add(this.label6);
@@ -218,6 +220,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.IDnumericUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CantidadnumericUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PrecionumericUpDown)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ExitencianumericUpDown)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -233,8 +237,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.NumericUpDown IDnumericUpDown;
         private System.Windows.Forms.TextBox DescripciontextBox;
-        private System.Windows.Forms.TextBox textBoxPrecio;
-        private System.Windows.Forms.TextBox ExitenciatextBox;
         private System.Windows.Forms.NumericUpDown CantidadnumericUpDown;
         private System.Windows.Forms.DateTimePicker FechaVencidodateTimePicker;
         private System.Windows.Forms.Button Nuevobutton;
@@ -242,5 +244,7 @@
         private System.Windows.Forms.Button Eliminarbutton;
         private System.Windows.Forms.Button Buscarbutton;
         private System.Windows.Forms.ErrorProvider errorProvider1;
+        private System.Windows.Forms.NumericUpDown ExitencianumericUpDown;
+        private System.Windows.Forms.NumericUpDown PrecionumericUpDown;
     }
 }
