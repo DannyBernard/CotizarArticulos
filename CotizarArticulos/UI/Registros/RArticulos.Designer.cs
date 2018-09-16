@@ -39,13 +39,13 @@
             this.DescripciontextBox = new System.Windows.Forms.TextBox();
             this.CantidadnumericUpDown = new System.Windows.Forms.NumericUpDown();
             this.FechaVencidodateTimePicker = new System.Windows.Forms.DateTimePicker();
-            this.Nuevobutton = new System.Windows.Forms.Button();
             this.Guardarbutton = new System.Windows.Forms.Button();
             this.Eliminarbutton = new System.Windows.Forms.Button();
             this.Buscarbutton = new System.Windows.Forms.Button();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.PrecionumericUpDown = new System.Windows.Forms.NumericUpDown();
             this.ExitencianumericUpDown = new System.Windows.Forms.NumericUpDown();
+            this.Nuevobutton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.IDnumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CantidadnumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
@@ -136,43 +136,39 @@
             this.FechaVencidodateTimePicker.Size = new System.Drawing.Size(103, 20);
             this.FechaVencidodateTimePicker.TabIndex = 12;
             // 
-            // Nuevobutton
-            // 
-            this.Nuevobutton.Location = new System.Drawing.Point(33, 273);
-            this.Nuevobutton.Name = "Nuevobutton";
-            this.Nuevobutton.Size = new System.Drawing.Size(75, 48);
-            this.Nuevobutton.TabIndex = 13;
-            this.Nuevobutton.Text = "Nuevo";
-            this.Nuevobutton.UseVisualStyleBackColor = true;
-            this.Nuevobutton.Click += new System.EventHandler(this.Nuevobutton_Click);
-            // 
             // Guardarbutton
             // 
+            this.Guardarbutton.Image = global::CotizarArticulos.Properties.Resources.save;
             this.Guardarbutton.Location = new System.Drawing.Point(173, 273);
             this.Guardarbutton.Name = "Guardarbutton";
-            this.Guardarbutton.Size = new System.Drawing.Size(75, 48);
+            this.Guardarbutton.Size = new System.Drawing.Size(75, 58);
             this.Guardarbutton.TabIndex = 14;
             this.Guardarbutton.Text = "Guardar";
+            this.Guardarbutton.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
             this.Guardarbutton.UseVisualStyleBackColor = true;
             this.Guardarbutton.Click += new System.EventHandler(this.Guardarbutton_Click);
             // 
             // Eliminarbutton
             // 
+            this.Eliminarbutton.Image = global::CotizarArticulos.Properties.Resources.delete;
             this.Eliminarbutton.Location = new System.Drawing.Point(300, 273);
             this.Eliminarbutton.Name = "Eliminarbutton";
-            this.Eliminarbutton.Size = new System.Drawing.Size(75, 48);
+            this.Eliminarbutton.Size = new System.Drawing.Size(75, 58);
             this.Eliminarbutton.TabIndex = 15;
             this.Eliminarbutton.Text = "Eliminar";
+            this.Eliminarbutton.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
             this.Eliminarbutton.UseVisualStyleBackColor = true;
             this.Eliminarbutton.Click += new System.EventHandler(this.Eliminarbutton_Click);
             // 
             // Buscarbutton
             // 
+            this.Buscarbutton.Image = global::CotizarArticulos.Properties.Resources.search;
             this.Buscarbutton.Location = new System.Drawing.Point(239, 5);
             this.Buscarbutton.Name = "Buscarbutton";
             this.Buscarbutton.Size = new System.Drawing.Size(75, 53);
             this.Buscarbutton.TabIndex = 16;
             this.Buscarbutton.Text = "Buscar";
+            this.Buscarbutton.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
             this.Buscarbutton.UseVisualStyleBackColor = true;
             this.Buscarbutton.Click += new System.EventHandler(this.Buscarbutton_Click);
             // 
@@ -193,6 +189,18 @@
             this.ExitencianumericUpDown.Name = "ExitencianumericUpDown";
             this.ExitencianumericUpDown.Size = new System.Drawing.Size(229, 20);
             this.ExitencianumericUpDown.TabIndex = 18;
+            // 
+            // Nuevobutton
+            // 
+            this.Nuevobutton.Image = global::CotizarArticulos.Properties.Resources.document_new;
+            this.Nuevobutton.Location = new System.Drawing.Point(33, 273);
+            this.Nuevobutton.Name = "Nuevobutton";
+            this.Nuevobutton.Size = new System.Drawing.Size(75, 58);
+            this.Nuevobutton.TabIndex = 13;
+            this.Nuevobutton.Text = "Nuevo";
+            this.Nuevobutton.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
+            this.Nuevobutton.UseVisualStyleBackColor = true;
+            this.Nuevobutton.Click += new System.EventHandler(this.Nuevobutton_Click);
             // 
             // RArticulos
             // 

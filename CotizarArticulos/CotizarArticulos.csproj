@@ -112,6 +112,10 @@
   <ItemGroup />
   <ItemGroup>
     <Content Include="DAL\Contizar.sql" />
+    <None Include="Resources\search.png" />
+    <None Include="Resources\save.png" />
+    <None Include="Resources\delete.png" />
+    <None Include="Resources\document_new.png" />
     <None Include="Resources\inventario_enriqueherrera.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

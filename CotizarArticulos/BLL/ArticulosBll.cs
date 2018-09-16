@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace CotizarArticulos.BLL
 {
-    class ArticulosBll
+   public class ArticulosBll
     {
         public static bool Guardar(Articulos articulos)
         {
